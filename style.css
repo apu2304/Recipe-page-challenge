@@ -1,0 +1,145 @@
+:root {
+    --almond: #f3e5d8ff;
+    --bole: #864b3bff;
+    --lavender-blush: #fff7fcff;
+    --quinacridone-magenta: #80405aff;
+    --white: #ffffffff;
+    --davys-gray: #4f4d49ff;
+}
+@font-face {
+    font-family: "out" ;
+    src: url('assets/fonts/outfit/Outfit-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: "young";
+    src: url('assets/fonts/young-serif/YoungSerif-Regular.ttf');
+}
+
+body{
+    background-color: var(--almond);
+    display: grid;
+    place-content: center;
+    margin: 0;
+    padding: 0;
+    font-family: "out";
+    font-size: 16px;
+}
+h1,h2,.bold{
+    font-family: "young";
+    font-weight: 200;
+}
+h1{
+    color: black;
+}
+h2{
+    color: var(--bole);
+}
+header img{
+    width: 100%;
+    display: block;
+    border-radius: 20px;
+}
+.container{
+    max-width: 850px;
+    background-color: var(--white);
+    margin: 50px 0;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 30px;
+    color: var(--davys-gray);
+}
+
+.prep{
+    background-color: var(--lavender-blush);
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+.prep h2{
+    font-family: "out";
+    font-weight: 600;
+    color: var(--quinacridone-magenta);
+    font-size: 1.1em;
+
+}
+ul li::marker{
+    color: var(--bole);
+}
+ol li::marker{
+    color: var(--bole);
+    font-weight: 500;
+}
+.prep li{
+    line-height: 1.7em;
+}
+.prep ul li span{
+    font-weight: 550;
+    padding: 0 10px;
+}
+
+.in ul li{
+    padding-left: 15px;
+    line-height: 1.9em;
+}
+.insta ol li{
+    padding-left: 15px;
+    line-height: 1.6em;
+}
+.insta ol li span{
+    font-weight: bold;
+    padding-right: 5px;
+}
+.tab table tr td.bold{
+    padding-left: 180px;
+}
+.tab table{
+    border-collapse: collapse;
+    width: 100%;
+}
+.tab table tr{
+    border-bottom: 1px solid #b4b2b2;
+}
+.tab table tr td{
+    padding-bottom: 15px;
+}
+.tab table tr:last-child{
+    border-bottom: none;
+}
+hr{
+    color: #b4b2b2;
+}
+@media screen and (max-width: 475px) {
+    body{
+        font-size: 15px;
+    }
+    .container{
+        width: 100%;
+        padding: 0;
+        border-radius: 0px;
+        margin: 0;
+        padding-bottom: 20px;
+    }
+    header img{
+        width: 100%;
+        display: block;
+        padding: 0;
+        border-radius: 0px;
+    }
+    .prep, .in, .insta, .tab{
+        padding: 10px 20px;
+    }
+    .head h1{
+        padding: 0 20px;
+    }
+    .head p{
+        padding: 0 20px;
+    }
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.attribution a {
+    color: var(--bole);
+}
